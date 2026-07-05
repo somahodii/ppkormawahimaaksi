@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PPK ORMAWA HIMAAKSI — Mangrove.id</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="grain-overlay" aria-hidden="true"></div>
+<!-- <div id="scroll-progress"></div> -->
+
+<!-- SECTION: PAGE LOADER -->
+<div id="page-loader">
+  <i class="fas fa-seedling loader-leaf"></i>
+</div>
+
+<!-- SECTION: FIXED HEADER (blur saat scroll) -->
+<header id="topbar">
+  <a href="#hero" class="topbar-brand">
+    <i class="fas fa-leaf"></i>
+    <span>PPK ORMAWA <span class="topbar-accent">HIMAAKSI</span></span>
+  </a>
+</header>
+
+<!-- Tombol toggle sidebar — pojok KANAN atas -->
+<button id="sidebar-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+
+<div id="sidebar-overlay"></div>
+
+<!-- SECTION: SIDEBAR -->
+<aside id="sidebar">
+  <a class="sidebar-brand" href="#hero">
+    <span class="sidebar-brand-icon"><i class="fas fa-leaf"></i></span>
+    <span class="sidebar-brand-text">PPK ORMAWA<span>HIMAAKSI</span></span>
+  </a>
+
+  <ul class="sidebar-nav">
+    <li><a class="nav-link" href="#hero"><i class="fas fa-house"></i> Beranda</a></li>
+    <li><a class="nav-link" href="#profil"><i class="fas fa-circle-info"></i> Profil</a></li>
+    <li><a class="nav-link" href="#mangrove"><i class="fas fa-tree"></i> Program</a></li>
+    <li><a class="nav-link" href="#penyelenggara"><i class="fas fa-users"></i> Penyelenggara</a></li>
+    <li><a class="nav-link" href="#mitra"><i class="fas fa-building-columns"></i> Mitra</a></li>
+    <li><a class="nav-link" href="#kontak"><i class="fas fa-envelope"></i> Kontak</a></li>
+  </ul>
+
+  <div class="sidebar-footer">
+    <div class="sidebar-footer-label">Ikuti Kami</div>
+    <div class="sidebar-social">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</aside>
+
+<div id="main-content">
+
+  <!-- SECTION: HERO -->
+  <section id="hero">
+    <div class="hero-mesh"></div>
+
+    <svg id="hero-svg" viewBox="0 0 1440 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="root-line" d="M100,300 Q120,200 180,150 Q240,100 260,50"/>
+      <path class="root-line" d="M180,300 Q200,220 160,170 Q140,130 170,80"/>
+      <path class="root-line" d="M350,300 Q380,210 420,160 Q460,110 440,40"/>
+      <path class="root-line" d="M420,300 Q410,230 380,190 Q360,155 400,100"/>
+      <path class="root-line" d="M700,300 Q720,200 760,150 Q800,100 780,30"/>
+      <path class="root-line" d="M780,300 Q770,220 740,180 Q720,145 755,80"/>
+      <path class="root-line" d="M1050,300 Q1070,200 1120,150 Q1160,110 1140,45"/>
+      <path class="root-line" d="M1200,300 Q1220,210 1260,165 Q1290,130 1280,60"/>
+    </svg>
+
+    <div class="particle" style="width:4px;height:4px;left:15%;bottom:30%;animation-duration:4s;animation-delay:0s;"></div>
+    <div class="particle" style="width:3px;height:3px;left:35%;bottom:20%;animation-duration:5s;animation-delay:1s;"></div>
+    <div class="particle" style="width:5px;height:5px;left:60%;bottom:35%;animation-duration:3.5s;animation-delay:.5s;"></div>
+    <div class="particle" style="width:3px;height:3px;left:80%;bottom:25%;animation-duration:4.5s;animation-delay:2s;"></div>
+    <div class="particle" style="width:4px;height:4px;left:50%;bottom:15%;animation-duration:6s;animation-delay:1.5s;"></div>
+
+    <div class="position-relative" style="z-index:2;">
+      <p class="hero-eyebrow">PPK Ormawa HIMAAKSI • Universitas Muhammadiyah Semarang</p>
+      <h1 class="hero-title">
+        Desa <span class="accent">Mangrove</span><br/>Tambak Lorok
+      </h1>
+      <p class="hero-sub">
+        Program Kreativitas Kegiatan Organisasi Mahasiswa yang berdedikasi pada pelestarian ekosistem mangrove dan pemberdayaan masyarakat pesisir.
+      </p>
+      <div class="hero-cta">
+        <a href="#profil" class="btn-primary-custom magnetic-btn">Jelajahi Program</a>
+        <a href="#kontak" class="btn-outline-custom magnetic-btn">Hubungi Kami</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: PROFIL -->
+  <section id="profil">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-5 reveal">
+          <div class="profil-img-wrap" id="profil-slider">
+            <div class="profil-slider-track" id="profil-slider-track">
+              <img src="images/Tambak.jpeg" alt="Hutan Mangrove 1" class="profil-slide" />
+              <img src="images/Tambak1.jpg" alt="Hutan Mangrove 2" class="profil-slide" />
+              <img src="images/Tambak2.jpeg" alt="Hutan Mangrove 3" class="profil-slide" />
+              <!-- <img src="images/Tambak3.jpeg" alt="Hutan Mangrove 4" class="profil-slide" /> -->
+            </div>
+            <button type="button" class="profil-slider-arrow prev" id="profil-prev" aria-label="Foto sebelumnya"><i class="fas fa-chevron-left"></i></button>
+            <button type="button" class="profil-slider-arrow next" id="profil-next" aria-label="Foto selanjutnya"><i class="fas fa-chevron-right"></i></button>
+            <div class="profil-slider-dots" id="profil-slider-dots"></div>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal reveal-delay-2">
+          <p class="section-eyebrow">Tentang Kami</p>
+          <div class="divider"></div>
+          <h2 class="section-title">PPK Ormawa<br/>HIMAAKSI</h2>
+          <p class="section-desc mb-4">
+            Program Penguatan Kapasitas Organisasi Mahasiswa Himpunan Mahasiswa Akuntansi Universitas Muhammadiyah Semarang. Kami hadir sebagai penggerak konservasi mangrove berbasis komunitas yang menggabungkan ilmu pengetahuan, aksi nyata, dan pemberdayaan lokal.
+          </p>
+          <div>
+            <span class="feature-pill"><i class="fas fa-leaf"></i> Edu-Ekowisata </span>
+            <span class="feature-pill"><i class="fas fa-water"></i> Konservasi Pesisir</span>
+            <span class="feature-pill"><i class="fas fa-users"></i> Pemberdayaan Lokal</span>
+            <span class="feature-pill"><i class="fas fa-seedling"></i> Tracking Mangrove</span>
+            <span class="feature-pill"><i class="fas fa-microscope"></i> Riset Lingkungan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: PROGRAM MANGROVE -->
+  <section id="mangrove">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-6 reveal">
+          <p class="section-eyebrow">Program Unggulan</p>
+          <div class="divider"></div>
+          <h2 class="section-title">Kegiatan<br/></h2>
+        </div>
+        <div class="col-lg-6 reveal reveal-delay-1 d-flex align-items-end">
+          <p class="section-desc">Serangkaian program terstruktur yang kami jalankan untuk menjaga kelestarian ekosistem mangrove dan meningkatkan kesadaran lingkungan masyarakat pesisir.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="mangrove-card tilt-target">
+            <div class="card-icon"><i class="fas fa-tree"></i></div>
+            <div class="card-title">Penanaman Bibit</div>
+            <div class="card-text">Program penanaman bibit mangrove secara rutin di kawasan pesisir yang mengalami abrasi. Melibatkan masyarakat lokal dan mahasiswa sebagai agen perubahan lingkungan.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="mangrove-card tilt-target">
+            <div class="card-icon"><i class="fas fa-binoculars"></i></div>
+            <div class="card-title">Monitoring Ekosistem</div>
+            <div class="card-text">Pemantauan berkala terhadap kesehatan ekosistem mangrove, keanekaragaman satwa, dan kualitas perairan pesisir.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+          <div class="mangrove-card tilt-target">
+            <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="card-title">Edukasi Konservasi</div>
+            <div class="card-text">Pelatihan dan workshop bagi masyarakat, dan pelajar tentang pentingnya ekosistem mangrove serta cara menjaganya untuk generasi mendatang.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="mangrove-card tilt-target">
+            <div class="card-icon"><i class="fas fa-hiking"></i></div>
+            <div class="card-title">Wisata Tracking</div>
+            <div class="card-text">Pengembangan jalur tracking mangrove yang ramah lingkungan sebagai daya tarik wisata edukasi sekaligus sarana pengamatan langsung kekayaan hayati pesisir.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="mangrove-card tilt-target">
+            <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <div class="card-title">Pemberdayaan Warga</div>
+            <div class="card-text">Pendampingan usaha berbasis mangrove seperti olahan pangan, kerajinan, dan budidaya silvofishery untuk meningkatkan pendapatan masyarakat pesisir.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+          <div class="mangrove-card tilt-target">
+            <div class="card-icon"><i class="fas fa-flask"></i></div>
+            <div class="card-title">Penelitian Ilmiah</div>
+            <div class="card-text">Pengkajian ilmiah tentang potensi, ancaman, dan strategi pemulihan ekosistem mangrove yang hasilnya digunakan sebagai acuan kebijakan konservasi lokal.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: penyelenggara -->
+  <section id="penyelenggara">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <p class="section-eyebrow">Tim Penyelenggara</p>
+        <div class="divider mx-auto"></div>
+        <h2 class="section-title">Penyelenggara PPK Ormawa<br/><span style="color:var(--cyan)">HIMAAKSI</span></h2>
+        <p class="section-desc mx-auto text-center">Para mahasiswa berdedikasi yang menggerakkan program konservasi mangrove dengan semangat dan kompetensi.</p>
+      </div>
+      <div class="row g-4 justify-content-center" id="penyelenggara-grid"></div>
+    </div>
+  </section>
+
+  <!-- SECTION: MITRA PROGRAM -->
+  <section id="mitra">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <p class="section-eyebrow">Mitra Program</p>
+        <div class="divider mx-auto"></div>
+        <h2 class="section-title">POKMASWAS<br/><span style="color:var(--cyan)">Kelompok Masyarakat Pengawas</span></h2>
+        <p class="section-desc mx-auto text-center">Lembaga yang mendukung terselenggaranya program PPK Ormawa HIMAAKSI demi kelestarian ekosistem mangrove.</p>
+      </div>
+      <div class="row g-4 justify-content-center" id="mitra-grid"></div>
+    </div>
+  </section>
+
+  <!-- SECTION: KONTAK -->
+  <section id="kontak">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-6 reveal">
+          <p class="section-eyebrow">Hubungi Kami</p>
+          <div class="divider"></div>
+          <h2 class="section-title">Bergabung &<br/>Berkolaborasi</h2>
+          <p class="section-desc">Tertarik bergabung, berkolaborasi, atau ingin mengetahui lebih lanjut tentang program kami? Kami terbuka untuk semua bentuk kerjasama demi kelestarian mangrove.</p>
+        </div>
+      </div>
+      <div class="row g-4 kontak-grid row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center">
+        <div class="col reveal reveal-delay-1">
+          <div class="kontak-info-card tilt-target">
+            <div class="kontak-icon"><i class="fas fa-university"></i></div>
+            <div class="kontak-label">Institusi</div>
+            <a class="kontak-val kontak-link" href="https://www.google.com/maps?q=Universitas+Muhammadiyah+Semarang" target="_blank" rel="noopener">
+              Himpunan Mahasiswa Akuntansi<br/>Universitas Muhammadiyah Semarang
+            </a>
+          </div>
+        </div>
+        <div class="col reveal reveal-delay-2">
+          <div class="kontak-info-card tilt-target">
+            <div class="kontak-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="kontak-label">Lokasi Kegiatan</div>
+            <a class="kontak-val kontak-link" href="https://maps.app.goo.gl/eruuBwDpmfUTYauBA" target="_blank" rel="noopener">
+              Desa Tambak Lorok<br/>Tanjung Mas Jawa Tengah
+            </a>
+          </div>
+        </div>
+        <div class="col reveal reveal-delay-3">
+          <div class="kontak-info-card tilt-target">
+            <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
+            <div class="kontak-label">Email</div>
+            <a class="kontak-val kontak-link" href="mailto:himaaksippkormawa@gmail.com">himaaksippkormawa@gmail.com</a>
+          </div>
+        </div>
+        <div class="col reveal reveal-delay-4">
+          <div class="kontak-info-card tilt-target">
+            <div class="kontak-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="kontak-label">WhatsApp Penyelenggara</div>
+            <a class="kontak-val kontak-link" href="https://wa.me/6285640704086" target="_blank" rel="noopener">+62 856-4070-4086</a>
+          </div>
+        </div>
+        <div class="col reveal reveal-delay-5">
+          <div class="kontak-info-card tilt-target">
+            <div class="kontak-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="kontak-label">WhatsApp Mitra</div>
+            <a class="kontak-val kontak-link" href="https://wa.me/6282323121243" target="_blank" rel="noopener">+62 823-2312-1243</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-brand">PPK ORMAWA <span style="color:var(--fog)">HIMAAKSI</span></div>
+      <div class="footer-sub">Mangrove.id — Untuk Pesisir yang Lestari</div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/ppkormawa.himaaksi26"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/@ppkormawahimaaksiunimus"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@ppkormawahimaaksi"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="footer-copy">© 2024 PPK Ormawa HIMAAKSI. Dibuat dengan 💚 untuk ekosistem mangrove Indonesia.</div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+</div><!-- /#main-content -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
