@@ -7,8 +7,8 @@
    ===================================================================== */
 const dataPenyelenggara = [
   { nama: "Duwi Khoirun Nisak",               peran: "Ketua",         nim: "14072420075", foto: "images/TimPpk/Ketua.jpg",     warna: "linear-gradient(135deg, #1A4D3C, #2D7A5F)" },
-  { nama: "Izzatul Tul",                      peran: "Sekretaris",    nim: "14072420041", foto: "images/TimPpk/sekre.jpg",     warna: "linear-gradient(135deg, #1a3a5c, #2d6a8f)" },
-  { nama: "Salsabilla Azzahra",               peran: "Bendahara",     nim: "14072420130", foto: "images/TimPpk/bendahara.jpg", warna: "linear-gradient(135deg, #3a1a4d, #6a2d8f)" },
+  { nama: "Izzatul Tul",                      peran: "Sekretaris",    nim: "14072420041", foto: "images/TimPpk/Sekre.jpg",     warna: "linear-gradient(135deg, #1a3a5c, #2d6a8f)" },
+  { nama: "Salsabilla Azzahra",               peran: "Bendahara",     nim: "14072420130", foto: "images/TimPpk/Bendahara.jpg", warna: "linear-gradient(135deg, #3a1a4d, #6a2d8f)" },
   { nama: "Isma Khoirotun Nur Hasanah ",      peran: "Acara",         nim: "14072420121", foto: "images/TimPpk/Acara1.jpg",    warna: "linear-gradient(135deg, #3a1a4d, #6a2d8f)" },
   { nama: "Salma Rohmatuddina",               peran: "Acara",         nim: "14072420092", foto: "images/TimPpk/Acara2.jpg",    warna: "linear-gradient(135deg, #3a1a4d, #6a2d8f)" },
   { nama: "Aurelia Hanny Aqmarina Putri R.",  peran: "Acara",         nim: "14072420070", foto: "images/TimPpk/Acara3.jpg",    warna: "linear-gradient(135deg, #3a1a4d, #6a2d8f)" },
